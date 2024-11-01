@@ -1,0 +1,63 @@
+/**
+ * SiteAttention Module
+ */
+
+.siteattention-on {
+
+    @media (max-width: 1250px) {
+        #postbox-container-1 {
+            width:100% !important;
+            margin-right:0 !important;
+            #side-sortables {
+                width:100% !important;
+            }
+        }
+
+        #poststuff {
+            min-width:100%;
+        }
+
+        #poststuff #post-body.columns-2 {
+            margin-right:0;
+        }
+    }
+
+    #slugdiv #post_name {
+        width:100%; // Is is anoyingly small
+    }
+
+    #SAPL {
+        position:fixed;
+        right:0;
+        bottom: 0;
+        z-index:99998;
+    }
+}
+
+/**
+ * SiteAttention score
+ */
+.siteattention-score {
+    .siteattention-score--logo {
+        float:left;
+        width:18px;
+        height: 18px;
+        margin-right:5px;
+        background-size:18px;
+        background-image: url('../images/logo-icon.png');
+    }
+
+    .siteattention-score--title {
+
+    }
+}
+
+
+/**
+ * Let other overlay expand over the SiteAttention sidebar
+ */
+.siteattention-on {
+    #SiteAttention, #SiteAttention_minimized {
+        z-index: 99999;
+    }
+}
